@@ -1,15 +1,21 @@
 from sys import argv
 
-script, num = argv 
+script, cap, m, n = argv 
 
-n = int(num)
+# Count multiples up to cap 
+cap = int(cap)
+# First multiple
+m = int(m)
+# Second multiple
+n = int(n)
+
 sum = 0
 
-for i in range(0,n):
-  if i % 3 == 0:
+for i in range(0,cap):
+  if i % m == 0:
     print(i)
     sum += i
-  elif i % 5 == 0:
+  elif i % n == 0:
     print(i)
     sum += i
   else:
